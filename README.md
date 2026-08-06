@@ -60,6 +60,13 @@ Project 2: SQL Data Analysis
           ↓
 Exploration, KPIs, trends, segmentation and reports
 
+## 🧭 How to Explore the Complete Project
+
+For the best understanding of the complete solution, review the repositories in the following order:
+
+1. Start with the SQL Data Warehouse Project to understand the architecture, ETL process, data cleaning and Gold Layer model.
+2. Continue to the SQL Data Analysis Project to see how the prepared Gold Layer data is used for business analysis and reporting.
+
 ---
 ## 🏗️ Data Architecture
 
@@ -167,12 +174,50 @@ data-warehouse-project/
 * Created reusable customer and product reporting views
 * Documented the architecture, data flow and data model
 
-## 🧭 How to Explore the Complete Project
+## 🎯 What This Project Achieves
 
-For the best understanding of the complete solution, review the repositories in the following order:
+This project transforms raw CRM and ERP data into a structured analytical solution that helps answer important business questions across sales, customers and products.
 
-1. Start with the SQL Data Warehouse Project to understand the architecture, ETL process, data cleaning and Gold Layer model.
-2. Continue to the SQL Data Analysis Project to see how the prepared Gold Layer data is used for business analysis and reporting.
+### Sales Performance
+
+* How much revenue has the business generated?
+* How many orders and products have been sold?
+* How has sales performance changed over months and years?
+* Which periods recorded the highest and lowest sales?
+* Is revenue increasing or decreasing compared with previous periods?
+* What is the cumulative sales performance over time?
+* Customer Insights
+* Who are the highest-value customers?
+* Which customers place the most orders?
+* How much does each customer spend on average?
+* How recently has each customer made a purchase?
+* How long has each customer been purchasing from the business?
+* Which customers can be classified as VIP, Regular or New?
+* Which countries and customer groups contribute the most revenue?
+* Product Performance
+* Which products generate the most and least revenue?
+* Which products are purchased most frequently?
+* How does each product perform compared with its historical average?
+* How does product performance compare with the previous year?
+* Which product categories contribute the largest share of total sales?
+* How many unique customers purchase each product?
+* Which products may require further business attention?
+* Reporting and Decision Support
+
+The project also creates reusable customer and product reporting views that provide business-ready metrics such as:
+
+1. Total revenue
+2. Total orders
+3. Total quantity sold
+4. Average order value
+5. Customer and product lifespan
+6. Purchase recency
+7. Average monthly spending
+8. Average monthly product revenue
+9. Customer segmentation
+10. Product performance classification
+
+
 
 ## 🛡️ License
 

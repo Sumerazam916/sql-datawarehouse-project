@@ -4,7 +4,7 @@ Welcome to the **Data Warehouse and Analytics Project** repository! 🚀
 This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
 
 
-🔗 Two-Part SQL Portfolio Project
+## 🔗 Two-Part SQL Portfolio Project
 
 This end-to-end SQL project is divided into two connected repositories, covering the complete journey from raw data ingestion to business analysis and reporting.
 

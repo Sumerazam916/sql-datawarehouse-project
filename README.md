@@ -3,6 +3,43 @@
 Welcome to the **Data Warehouse and Analytics Project** repository! 🚀  
 This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
 
+
+🔗 Two-Part SQL Portfolio Project
+
+This end-to-end SQL project is divided into two connected repositories, covering the complete journey from raw data ingestion to business analysis and reporting.
+
+Part 1: SQL Data Warehouse
+
+The first part focuses on building a modern data warehouse using the Medallion Architecture.
+
+It includes:
+
+Loading raw CRM and ERP data into the Bronze Layer
+Cleaning and standardizing data in the Silver Layer
+Integrating multiple source systems
+Building fact and dimension tables in the Gold Layer
+Creating a business-ready star schema for analytics
+
+➡️ Explore the SQL Data Warehouse Project
+
+Part 2: SQL Data Analysis
+
+The second part uses the Gold Layer tables created in Project 1 to perform SQL-based business analysis.
+
+It includes:
+
+Database and dimension exploration
+Data quality and relationship checks
+Sales, customer and product KPIs
+Sales trend analysis
+Cumulative and year-over-year analysis
+Product performance analysis
+Customer segmentation
+Part-to-whole analysis
+Customer and product reporting views
+
+➡️ Explore the SQL Data Analysis Project
+
 ---
 ## 🏗️ Data Architecture
 

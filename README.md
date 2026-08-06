@@ -14,11 +14,11 @@ The first part focuses on building a modern data warehouse using the Medallion A
 
 It includes:
 
-Loading raw CRM and ERP data into the Bronze Layer
-Cleaning and standardizing data in the Silver Layer
-Integrating multiple source systems
-Building fact and dimension tables in the Gold Layer
-Creating a business-ready star schema for analytics
+* Loading raw CRM and ERP data into the Bronze Layer
+* Cleaning and standardizing data in the Silver Layer
+* Integrating multiple source systems
+* Building fact and dimension tables in the Gold Layer
+* Creating a business-ready star schema for analytics
 
 ➡️ Explore the SQL Data Warehouse Project - https://github.com/Sumerazam916/sql-datawarehouse-project
 
@@ -28,17 +28,37 @@ The second part uses the Gold Layer tables created in Project 1 to perform SQL-b
 
 It includes:
 
-Database and dimension exploration
-Data quality and relationship checks
-Sales, customer and product KPIs
-Sales trend analysis
-Cumulative and year-over-year analysis
-Product performance analysis
-Customer segmentation
-Part-to-whole analysis
-Customer and product reporting views
+* Database and dimension exploration
+* Data quality and relationship checks
+* Sales, customer and product KPIs
+* Sales trend analysis
+* Cumulative and year-over-year analysis
+* Product performance analysis
+* Customer segmentation
+* Part-to-whole analysis
+* Customer and product reporting views
 
 ➡️ Explore the SQL Data Analysis Project - https://github.com/Sumerazam916/sql-data-analysis-project
+
+
+## 🔄 End-to-End Project Workflow
+
+CRM and ERP CSV Files
+          ↓
+Project 1: SQL Data Warehouse
+          ↓
+Bronze Layer
+Raw data ingestion
+          ↓
+Silver Layer
+Data cleaning and transformation
+          ↓
+Gold Layer
+Fact and dimension tables
+          ↓
+Project 2: SQL Data Analysis
+          ↓
+Exploration, KPIs, trends, segmentation and reports
 
 ---
 ## 🏗️ Data Architecture
@@ -134,6 +154,25 @@ data-warehouse-project/
 ```
 ---
 
+## ✨ Key Project Highlights
+
+* Designed a data warehouse using Bronze, Silver and Gold layers
+* Developed SQL-based ETL pipelines for CRM and ERP source data
+* Applied data cleaning, standardization and validation rules
+* Integrated multiple source systems into a unified data model
+* Created fact and dimension tables using star schema principles
+* Performed exploratory and business-focused SQL analysis
+* Used CTEs, joins, aggregate functions and window functions
+* Analyzed customer behaviour, product performance and sales trends
+* Created reusable customer and product reporting views
+* Documented the architecture, data flow and data model
+
+## 🧭 How to Explore the Complete Project
+
+For the best understanding of the complete solution, review the repositories in the following order:
+
+1. Start with the SQL Data Warehouse Project to understand the architecture, ETL process, data cleaning and Gold Layer model.
+2. Continue to the SQL Data Analysis Project to see how the prepared Gold Layer data is used for business analysis and reporting.
 
 ## 🛡️ License
 

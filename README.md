@@ -20,7 +20,7 @@ Integrating multiple source systems
 Building fact and dimension tables in the Gold Layer
 Creating a business-ready star schema for analytics
 
-➡️ Explore the SQL Data Warehouse Project
+➡️ Explore the SQL Data Warehouse Project - https://github.com/Sumerazam916/sql-datawarehouse-project
 
 Part 2: SQL Data Analysis
 
@@ -38,7 +38,7 @@ Customer segmentation
 Part-to-whole analysis
 Customer and product reporting views
 
-➡️ Explore the SQL Data Analysis Project
+➡️ Explore the SQL Data Analysis Project - https://github.com/Sumerazam916/sql-data-analysis-project
 
 ---
 ## 🏗️ Data Architecture

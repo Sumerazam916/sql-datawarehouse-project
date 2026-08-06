@@ -43,29 +43,24 @@ It includes:
 
 ## 🔄 End-to-End Project Workflow
 
-CRM and ERP CSV Files
-          ↓
-Project 1: SQL Data Warehouse
-          ↓
-Bronze Layer
-Raw data ingestion
-          ↓
-Silver Layer
-Data cleaning and transformation
-          ↓
-Gold Layer
-Fact and dimension tables
-          ↓
-Project 2: SQL Data Analysis
-          ↓
-Exploration, KPIs, trends, segmentation and reports
+          CRM and ERP CSV Files
+                    ↓
+          Project 1: SQL Data Warehouse
+                    ↓
+          Bronze Layer
+          Raw data ingestion
+                    ↓
+          Silver Layer
+          Data cleaning and transformation
+                    ↓
+          Gold Layer
+          Fact and dimension tables
+                    ↓
+          Project 2: SQL Data Analysis
+                    ↓
+          Exploration, KPIs, trends, segmentation and reports
+          
 
-## 🧭 How to Explore the Complete Project
-
-For the best understanding of the complete solution, review the repositories in the following order:
-
-1. Start with the SQL Data Warehouse Project to understand the architecture, ETL process, data cleaning and Gold Layer model.
-2. Continue to the SQL Data Analysis Project to see how the prepared Gold Layer data is used for business analysis and reporting.
 
 ---
 ## 🏗️ Data Architecture
@@ -143,11 +138,12 @@ data-warehouse-project/
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
 │
 ├── docs/                               # Project documentation and architecture details
-│   ├── etl.drawio                      # Draw.io file shows all different techniques and methods of ETL
 │   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
 │   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
-│   ├── data_models.drawio              # Draw.io file for data models (star schema)
+│   ├── data_flow_diagram.png                # Draw.io file for the data flow diagram
+│   ├── data_models.png              # Draw.io file for data models (star schema)
+|   ├── data_integration.png          # describes how data tables are integrated or related to each other
+|   ├── data_layers.pdf               # gives an understanding about the different Medallion layers
 │
 ├── scripts/                            # SQL scripts for ETL and transformations
 │   ├── bronze/                         # Scripts for extracting and loading raw data
@@ -217,7 +213,105 @@ The project also creates reusable customer and product reporting views that prov
 9. Customer segmentation
 10. Product performance classification
 
+## 🚀 How to Run the Complete Project
 
+1. Clone Both Repositories
+
+          git clone https://github.com/Sumerazam916/sql-datawarehouse-project.git
+          git clone https://github.com/Sumerazam916/sql-data-analysis-project.git
+
+2. Install the Required Tools
+
+          SQL Server 2022 or later
+          SQL Server Management Studio
+          Git
+
+3. Open Project 1 in SSMS
+
+Run the Project 1 SQL scripts in this order:
+
+          1. init_database.sql
+          2. Bronze Layer/ddl_script.sql
+          3. Bronze Layer/load_procedure.sql
+          4. tests/Bronze_quality_checks.sql
+          5. Silver Layer/ddl_silver.sql
+          6. Silver Layer/proc_load_silver.sql
+          7. tests/Silver_quality_checks.sql
+          8. Gold Layer/ddl_gold.sql
+
+4. Update the Dataset Paths
+
+Before running the Bronze load procedure, update the CSV file paths inside:
+
+          Bronze Layer/load_procedure.sql
+
+Use the location where the Project 1 datasets are saved on your computer.
+
+5. Load the Data Warehouse
+
+Run the Bronze and Silver stored procedures:
+
+          EXEC Bronze.load_bronze;
+          EXEC Silver.load_Silver;
+
+This creates the final Gold Layer objects:
+
+          Gold.dim_customers
+          Gold.dim_products
+          Gold.fact_sales
+          
+6. Open Project 2 in SSMS
+
+Make sure the active database is:
+
+          USE DataWarehouse;
+          GO
+
+Run the Project 2 analysis scripts in order:
+
+          01. Database Exploration
+          02. Dimensions Exploration
+          03. Date and Time Exploration
+          04. Measure Exploration
+          05. Magnitude Analysis
+          06. Ranking Analysis
+          07. Change-Over-Time Analysis
+          08. Cumulative Analysis
+          09. Performance Analysis
+          10. Part-to-Whole Analysis
+          11. Data Segmentation
+          12. Create the Final Reports
+          
+Run:
+
+          Customer_Report.sql
+          Products_Report.sql
+
+8. View the Results
+   
+          SELECT * FROM Gold.dim_customers;
+          SELECT * FROM Gold.dim_products;
+          SELECT * FROM Gold.fact_sales;
+          SELECT * FROM Gold.report_customer;
+          SELECT * FROM Gold.report_products;
+   
+## Complete Workflow
+
+          Clone Repositories
+                  ↓
+          Create SQL Database
+                  ↓
+          Load Bronze Layer
+                  ↓
+          Clean Data in Silver Layer
+                  ↓
+          Create Gold Star Schema
+                  ↓
+          Run SQL Analysis
+                  ↓
+          Create Customer and Product Reports
+                  ↓
+          View Results in SSMS
 
 ## 🛡️ License
 
